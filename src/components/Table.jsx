@@ -56,7 +56,7 @@ const Table = ({ users, setUsers }) => {
     };
 
     fetchUsersFromFirestore();
-  }, []);
+  }, [setUsers]);
 
   const handleDeleteRow = async (userId) => {
     try {
