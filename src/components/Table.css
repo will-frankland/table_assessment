@@ -1,0 +1,92 @@
+/* Table Container */
+.table-container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Table Header */
+.table__header {
+  background-color: #f6f6f6;
+  font-weight: bold;
+}
+
+/* Table Header Row */
+.table__row {
+  border-bottom: 1px solid #f0f0f0;
+  text-align: left;
+}
+
+/* Table Header Cell */
+.table__header-cell {
+  padding: 16px;
+}
+
+/* Table Body */
+.table__body {
+  background-color: #ffffff;
+}
+
+/* Table Body Rows */
+.table__body .table__row {
+  transition: background-color 0.2s ease-in-out;
+}
+
+.table__body .table__row:hover {
+  background-color: #f9f9f9;
+}
+
+.table__data-cell {
+  padding: 16px;
+}
+
+/* Alternating Row Colors */
+.table__body .table__row:nth-child(even) {
+  background-color: #f6f6f6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .table__header,
+  .table__body .table__row {
+    display: block;
+  }
+
+  .table__header-cell,
+  .table__data-cell {
+    padding: 12px;
+  }
+
+  .table__data-cell::before {
+    content: attr(data-label);
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+}
+
+.delete__btn {
+  color: red;
+  margin-right: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.edit__btn {
+  color: green;
+  margin-right: 25px;
+}
+
