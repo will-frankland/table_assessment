@@ -7,7 +7,7 @@ import {
   CTableBody,
   CTableDataCell,
 } from "@coreui/react";
-import { BsFillTrashFill, BsFillPencilFill } from "react-icons/bs";
+import { BsFillTrashFill } from "react-icons/bs";
 
 //MUI
 import TextField from "@mui/material/TextField";
@@ -214,7 +214,6 @@ const Table = ({ users, setUsers }) => {
                       className="delete__btn"
                       onClick={() => handleDeleteRow(user.id)}
                     />
-                    <BsFillPencilFill className="edit__btn" />
                   </div>
                 </CTableDataCell>
               </CTableRow>

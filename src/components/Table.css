@@ -80,13 +80,6 @@
 
 .delete__btn {
   color: red;
-  margin-right: 25px;
-  margin-left: 10px;
+  margin-left: 30px;
   cursor: pointer;
 }
-
-.edit__btn {
-  color: green;
-  margin-right: 25px;
-}
-
